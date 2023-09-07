@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom'
-import { SuperheroCard } from '../../components'
+import { HeroBioCard } from '../../components'
 
 const Superhero = () => {
-    const [superhero, setSuperhero] = useState('')
+    const [superhero, setSuperhero] = useState({ image: {}, biography: {}})
     const { id } = useParams()
 
     useEffect(() => {
@@ -16,8 +16,7 @@ const Superhero = () => {
     }, [id])
     return (
         <main>
-            <SuperheroCard superhero={superhero} />
-            {/* hello */}
+            <HeroBioCard superhero={superhero} />
         </main>
     )
 }
