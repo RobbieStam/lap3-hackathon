@@ -14,6 +14,7 @@ const HeroBioCard = ({ superhero }) => {
             <h3>Also known as {superhero.name}</h3>
             <div>
                 <ul>
+
                     <li>{superhero.biography["alter-egos"] === "No alter egos found." ? '' : superhero.biography["alter-egos"]}</li>
                     <li>Aliases: <br />{superhero.biography.aliases}</li>
                     <li>Place of birth: <br />{superhero.biography["place-of-birth"]}</li>
@@ -28,3 +29,4 @@ const HeroBioCard = ({ superhero }) => {
 }
 
 export default HeroBioCard
+
