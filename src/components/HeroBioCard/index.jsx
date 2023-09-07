@@ -12,9 +12,6 @@ const HeroBioCard = ({ superhero }) => {
             
             <h2>{superhero.biography["full-name"]}</h2>
             <h3>Also known as {superhero.name}</h3>
-            {/* // {
-            //     superhero
-            // } */}
             <div>
                 <ul>
                     <li>Alter ego: {superhero.biography["alter-egos"]}</li>

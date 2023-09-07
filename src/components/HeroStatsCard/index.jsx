@@ -1,10 +1,10 @@
 import React from 'react'
 
-const HeroCard = ({ hero }) => {
+const HeroStatsCard = ({ hero }) => {
   return (
     <div className="hero-card">
       <div>
-        <img src={hero.image} alt={hero.name} />
+      <img src={hero.image.url} alt={hero.name} />
       </div>
       <div>
         <div>
@@ -24,4 +24,4 @@ const HeroCard = ({ hero }) => {
   )
 }
 
-export default HeroCard
+export default HeroStatsCard

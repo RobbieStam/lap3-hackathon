@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom'
 import { HeroBioCard } from '../../components'
 
-const Superhero = () => {
+const SuperHeroBio = () => {
     const [superhero, setSuperhero] = useState({ image: {}, biography: {}})
     const { id } = useParams()
 
@@ -15,10 +15,9 @@ const Superhero = () => {
         fetchSuperhero()
     }, [id])
     return (
-        <main>
+        <div>
             <HeroBioCard superhero={superhero} />
-        </main>
+        </div>
     )
-}
-
-export default Superhero
+    }
+export default SuperHeroBio
