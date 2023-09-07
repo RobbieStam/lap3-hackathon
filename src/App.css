@@ -1,0 +1,72 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+  background-image: url("https://cdn.wallpapersafari.com/23/96/0JCwuP.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F7F5FB;
+  font-size: 20px;
+}
+
+.navlink {
+  margin: 2vw;
+  color: #F7F5FB;
+  
+}
+
+header {
+  background-color: #012839;
+  padding: 6vh;
+}
+
+nav {
+  font-size: 4vh;
+}
+
+.hero-card img {
+  max-width: 20vw;
+  max-height: 35vh;
+  padding-top: 2vh
+}
+
+.hero-card {
+  font-size: 3vh;
+  background-color: #012839;
+  margin: 10vh 25vw;
+  border: 2px solid #F7F5FB;
+  border-radius: 4vh;
+  padding: 30px;
+  color: #F7F5FB;
+  min-width: 600px;
+}
+
+.hero-card h1 {
+  font-size: 10vh;
+}
+
+.hero-card h2 {
+  font-size: 6vh;
+}
+
+.hero-card li {
+  font-size: 3vh;
+  padding: 1vh;
+  list-style-type: none;
+}
+
+form {
+  text-align: center;
+  padding: 1rem;
+}
+
+form>input {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+form>label {
+  font-size: 2rem;
+  padding-right: 2vw;
+}
