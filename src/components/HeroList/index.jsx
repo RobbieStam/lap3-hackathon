@@ -1,14 +1,15 @@
 import React from 'react'
-import HeroCard from '.'
+import HeroCard from '../HeroCard'
 
 const HeroList = ({ heroData }) => {
+  console.log(heroData)
   return (
-    <div className="heros">
+    <div>
       {
-        heroData.filter(hero => hero.image? true : false)
-        .map(hero => <HeroCard key={hero.id} hero={hero} />)
+        heroData.map(hero => <HeroCard key={hero.id} hero={hero} />)
       }
     </div>
+    
   )
 }
 
