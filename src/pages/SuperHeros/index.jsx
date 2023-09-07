@@ -3,33 +3,22 @@ import { HeroGallery } from '../../components'
 
 const SuperHeros = () => {
   const [superHeros, setSuperHeros] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
 
   useEffect(() => {
-    fetchSuperHeros()
-  }, [])
-
-  async function fetchSuperHeros() {
-    try {
-      const response =  await fetch('https://www.superheroapi.com/api.php/3713264402252430/')
+    async function fetchAPI() {
+      const response = await fetch(`https://www.superheroapi.com/api.php/10225446179047801/search/a`)
       const data = await response.json()
-      setSuperHeros(data)
-      console.log(data)
-      setLoading(false)
-    } catch (err) {
-      setError(err.message)
+      setSuperHeros(data.results)
     }
-  }
-
-  const errorOrGallery = error ? 'error' : <HeroGallery superHeros={superHeros} />
+    fetchAPI()
+  }, [])
 
   return (
     <>
-      {
-        loading ? <p>Loading ...</p> : errorOrGallery
-      }
+    <h1>Super Heros</h1>
+    <HeroGallery superHeros={superHeros} />
     </>
+    
   )
 }
 

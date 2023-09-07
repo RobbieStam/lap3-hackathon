@@ -1,10 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const HeroStatsCard = ({ hero }) => {
   return (
     <>
     <div className="hero-card">
-    <h1>{hero.name}</h1>
+    <NavLink className="title-link" to={"http://localhost:5173/superheros/" + hero.id}>{hero.name}</NavLink>
       <div>
         <img src={hero.image.url} alt={hero.name} />
       </div>

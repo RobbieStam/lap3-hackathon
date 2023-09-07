@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { SearchForm, HeroList } from '../../components'
 
 const Search = () => {
-  const [search, setSearch] = useState('Batman');
+  const [search, setSearch] = useState('S');
   const [heroData, setHeroData] = useState([])
 
   useEffect(() => {
