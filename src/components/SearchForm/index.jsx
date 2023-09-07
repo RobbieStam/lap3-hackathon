@@ -25,7 +25,7 @@ const SearchForm = ({ getHeros }) => {
       value={hero}
       onChange={handleInput}
       />
-      <input type="submit" value='Search' />
+      <input className="button-1" type="submit" value='Search' />
     </form>
   )
 }
