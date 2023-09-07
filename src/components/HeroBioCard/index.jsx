@@ -4,7 +4,7 @@ const HeroBioCard = ({ superhero }) => {
 
     // const listAliases 
   return (
-    <div>
+    <div className="hero-card">
         <div>
             <img src={superhero.image.url} alt={superhero.biography["full-name"]} />
         </div>
@@ -14,12 +14,12 @@ const HeroBioCard = ({ superhero }) => {
             <h3>Also known as {superhero.name}</h3>
             <div>
                 <ul>
-                    <li>Alter ego: {superhero.biography["alter-egos"]}</li>
-                    <li>Aliases: {superhero.biography.aliases}</li>
-                    <li>Place of birth: {superhero.biography["place-of-birth"]}</li>
-                    <li>First appearance: {superhero.biography["first-appearance"]}</li>
-                    <li>Publisher: {superhero.biography.publisher}</li>
-                    <li>Alignment: {superhero.biography.alignment}</li>
+                    <li>{superhero.biography["alter-egos"] === "No alter egos found." ? '' : superhero.biography["alter-egos"]}</li>
+                    <li>Aliases: <br />{superhero.biography.aliases}</li>
+                    <li>Place of birth: <br />{superhero.biography["place-of-birth"]}</li>
+                    <li>First appearance: <br />{superhero.biography["first-appearance"]}</li>
+                    <li>Publisher: <br />{superhero.biography.publisher}</li>
+                    <li>Alignment: <br />{superhero.biography.alignment}</li>
                 </ul>
             </div>
         </div>

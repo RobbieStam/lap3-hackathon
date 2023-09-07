@@ -26,8 +26,9 @@ nav {
 }
 
 .hero-card img {
-  max-width: 30vw;
-  max-height: 60vh;
+  max-width: 20vw;
+  max-height: 35vh;
+  padding-top: 2vh
 }
 
 .hero-card {
@@ -50,7 +51,9 @@ nav {
 }
 
 .hero-card li {
-  font-size: 5vh;
+  font-size: 3vh;
+  padding: 1vh;
+  list-style-type: none;
 }
 
 form {
