@@ -118,3 +118,46 @@ form>label {
   font-size: 2rem;
   padding-right: 2vw;
 }
+
+button, .button-1 {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #012839;
+    color: #F7F5FB;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 1.9rem;
+    padding: 1em 1.7em;
+}
+
+.button-1 {
+    padding: 0.6em 1.7em;
+    position: relative;
+    bottom: 3.7px;
+}
+
+button:hover, .button-1:hover {
+    border: solid 1px #F7F5FB;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    height: 82vh;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    
+}
+
+.middle div {
+    /* background-image: linear-gradient(#012839, #01283976, #012839); */
+    background-color: #0128398e;
+    padding: 70px 50px;
+    border-radius: 10px;
+    
+}

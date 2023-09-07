@@ -21,6 +21,7 @@ const HeroStatsCard = ({ hero }) => {
               <li>Power: {hero.powerstats.power}</li>
               <li>Combat: {hero.powerstats.combat}</li>
             </ul>
+
         </div>
       </div>
     </div>
