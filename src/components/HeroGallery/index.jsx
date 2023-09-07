@@ -9,7 +9,7 @@ const HeroGallery = ({ superHeros }) => {
       {
         superHeros.map(hero => 
           <>
-            <Link>
+            <Link to={"http://localhost:5173/superheros/" + hero.id}>
               <h1>{hero.name}</h1>
               <div className="hero-image">
                 <img src={hero.image.url} alt={hero.name} />
