@@ -10,10 +10,57 @@ body {
   font-size: 20px;
 }
 
+.title-link {
+  color: #F7F5FB;
+  font-size: 10vh;
+}
+
+.title-link:hover {
+  color: aquamarine;
+}
+
 .navlink {
   margin: 2vw;
   color: #F7F5FB;
   
+}
+
+.heros h1{
+  text-decoration: none;
+  color: #F7F5FB;
+}
+
+.see-more-btn{
+  padding: 2vh;
+  background-color: antiquewhite;
+  text-decoration: none;
+  margin: 50px;
+  color: black;
+}
+
+.hero-image {
+  width: 25%;
+  margin: 10px;
+}
+
+.hero-image:hover {
+  transform: scale(0.9);
+}
+
+.heros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.see-more-btn:hover {
+  background-color:#012839;
+  color: #F7F5FB;
+  border: 2px solid #F7F5FB; 
 }
 
 header {
@@ -27,7 +74,7 @@ nav {
 
 .hero-card img {
   max-width: 20vw;
-  max-height: 35vh;
+  max-height: 50vh;
   padding-top: 2vh
 }
 
@@ -54,6 +101,7 @@ nav {
   font-size: 3vh;
   padding: 1vh;
   list-style-type: none;
+  margin: 1.5vh;
 }
 
 form {
