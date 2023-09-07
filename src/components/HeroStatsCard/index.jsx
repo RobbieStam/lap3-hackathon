@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeroCard = ({ hero }) => {
+const HeroStatsCard = ({ hero }) => {
   return (
     <>
     <div className="hero-card">
@@ -10,7 +10,7 @@ const HeroCard = ({ hero }) => {
       </div>
       <div>
         <div>
-            <h2>Hero's Stats</h2>
+              <h2>Hero's Stats</h2>
             <ul>
               <li>IQ: {hero.powerstats.intelligence}</li>
               <li>Strength: {hero.powerstats.strength}</li>
@@ -26,4 +26,4 @@ const HeroCard = ({ hero }) => {
   )
 }
 
-export default HeroCard
+export default HeroStatsCard
