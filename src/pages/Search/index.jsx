@@ -16,6 +16,7 @@ const Search = () => {
 
   return (
     <>
+      <h1 style={{ fontSize: "9vh" }}>Search</h1>
       <SearchForm getHeros={setSearch} />
       <HeroList heroData={heroData} />
     </>
