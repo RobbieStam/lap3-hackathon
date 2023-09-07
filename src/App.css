@@ -88,6 +88,8 @@ button {
 
 .button-1 {
     padding: 0.6em 1.7em;
+    position: relative;
+    bottom: 3.7px;
 }
 
 button:hover, .button-1:hover {
@@ -105,6 +107,7 @@ button:hover, .button-1:hover {
 }
 
 .middle div {
+    /* background-image: linear-gradient(#012839, #01283976, #012839); */
     background-color: #0128398e;
     padding: 70px 50px;
     border-radius: 10px;
